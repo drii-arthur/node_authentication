@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Contact Manager</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="container-fluid header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Arkademy Project</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of header -->
+
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-md-4"></div>
+            <!-- form -->
+            <div class="col-md-4 ">
+                <div class="form-tambah pt-4 signIn">
+                    <form>
+                        <h3 class="text-center">SIGN IN</h3>
+                        <div class="form-group px-3">
+                            <label for="name">Email</label>
+                            <input type="email" name="email" class="form-control" id="email"
+                                placeholder="Insert your email" />
+                            <code id="errName"></code>
+                        </div>
+
+                        <div class="form-group px-3">
+                            <label for="number">Password</label>
+                            <input type="Password" name="phoneNumber" class="form-control" id="pw"
+                                placeholder="Insert your password" />
+                            <code id="errPhone"></code>
+                        </div>
+
+                        <div class="form-check" style="padding-left:2.3rem">
+                            <input type="checkbox" name="cek" class="form-check-input" id="cek" />
+                            <label class="form-check-label" for="cek" style="font-weight:normal">Remember Me</label>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary tombol m-3" id="login">
+                                LOGIN
+                            </button>
+                        </div>
+
+                        <div class="word px-3 mb-3">Belum punya Akun? <a href="signup">SignUp</a></div>
+
+
+                    </form>
+                </div>
+            </div>
+            <!-- end of form -->
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="container-fluid footer" style="position:fixed;bottom:0">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <p>Created By : Muhammad Pandriadi</p>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- end of footer -->
+
+
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./js/script.js">
+    </script>
+</body>
+
+</html>
