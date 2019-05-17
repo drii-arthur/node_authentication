@@ -18,11 +18,11 @@ app.get('/', (req, res) => {
 })
 
 app.get('/signup', (req, res) => {
-    res.sendfile(__dirname + '/public/signup.html')
+    res.sendFile(__dirname + '/public/signup.html')
 })
 
 app.get('/signin', (req, res) => {
-    res.sendfile(__dirname + '/public/signin.html')
+    res.sendFile(__dirname + '/public/signin.html')
 })
 
 app.get("/users", (req, res) => {
@@ -36,11 +36,11 @@ app.get("/users", (req, res) => {
 
 app.get("/users/signin/:email", (req, res) => {
     const query = "SELECT * FROM users WHERE email = ?"
-    const params = req.params.id
+    const params = req.params.email
 
     db.get(query, params, (err, data) => {
         if (err) throw err;
-        console.log('data users berhasil di ambil')
+        console.log('login berhasil')
         res.json(data)
     })
 })
@@ -51,7 +51,7 @@ app.post("/users/signup", (req, res) => {
     db.run(query, params, (err, data) => {
         if (err) throw err;
         console.log("data user berhasil di tambah");
-        res.json(data)
+        res.redirect('/signin')
     })
 })
 
